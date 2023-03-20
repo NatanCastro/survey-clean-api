@@ -12,7 +12,7 @@ export default {
   testEnvironment: 'node',
 
   transform: {
-    '.+\\.ts$': 'ts-jest'
+    '.+\\.ts$': '@swc/jest'
   },
 
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)']

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "npm test",
+    "test:staged": "npm test -- --findRelatedTests",
     "husky:prepare": "npx husky install"
   },
   "keywords": [],
