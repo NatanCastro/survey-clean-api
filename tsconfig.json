@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "commonjs",
-    "target": "es2019",
-    "esModuleIterop": true,
-    "allowJs": true
-  }
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true
+  },
+  "exclude": ["coverage", "*.config.ts"]
 }
