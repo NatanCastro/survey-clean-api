@@ -27,6 +27,7 @@ describe('SignUp Controller', () => {
 
     const httpResponse = sut.handle(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
+    expect(httpResponse.body).toEqual(new Error('Missing param: email'))
   })
   it.todo('Should return 400 if no password is provded')
   it.todo('Should return 400 if no password confirmation is provided')
